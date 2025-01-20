@@ -29,8 +29,8 @@ public class addEjemplar_Servlet extends HttpServlet {
         if(!request.getParameter("isbn").isEmpty()
                 ||!request.getParameter("estado").isEmpty()){
             if(request.getParameter("estado").equalsIgnoreCase("Disponible")
-                    ||request.getParameter("id").equalsIgnoreCase("Prestadp")
-                    ||request.getParameter("id").equalsIgnoreCase("Dañado")){
+                    ||request.getParameter("estado").equalsIgnoreCase("Prestado")
+                    ||request.getParameter("estado").equalsIgnoreCase("Dañado")){
 
 
             String isbn = request.getParameter("isbn");
